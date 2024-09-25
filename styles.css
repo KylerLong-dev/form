@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "myCustomFont";
+    src: url("fonts/Norse-Bold.otf") format("woff2");
+    src: url("fonts/Norse-Bold.otf") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
