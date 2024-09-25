@@ -2,6 +2,7 @@
     font-family: "myCustomFont";
     src: url("fonts/Norse-Bold.otf") format("woff2");
     src: url("fonts/Norse-Bold.otf") format("woff");
+    src: url("fonts/Norse-Bold.otf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -12,3 +13,49 @@
     padding: 0;
 }
 
+body {
+    display: flex; 
+}
+
+.left {
+    height: 100vh;
+    width: 33%;
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left p {
+    text-align: center;
+    color: rgb(237, 237, 237);
+    font-size: .7em;
+    margin-bottom: .3em;
+}
+
+.left a {
+    color: rgb(237, 237, 237);
+}
+
+.left_logo {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.left_logo img {
+    max-width: 100px;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.left_logo h1 {
+    font-family: "myCustomFont";
+    color: white;
+    font-size: 6em;
+}
