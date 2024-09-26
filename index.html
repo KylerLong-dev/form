@@ -19,12 +19,61 @@
     </div>
 
     <div class="right">
+
         <div class="right_intro">
             <h3>This is an awesomely unreal online service! You know you need this, sign up now to get started!</h3>
             <h3>You <i>know</i> you want to.</h3>
         </div>
-        <form class="right_form"></form>
-        <div class="right_account"></div>
+
+        <form id="right_form" action="example.com/path" method="post">
+
+            <div class="right_form-row">
+                <h2>Let's Do This!</h2>
+            </div>
+
+            <div class="right_form-row">
+                <div class="right_form-column">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="firstName">
+                </div>
+
+                <div class="right_form-column">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="lastName">
+                </div>
+            </div>
+
+            <div class="right_form-row">
+                <div class="right_form-column">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="right_form-column">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phoneNumber">
+                </div>
+            </div>
+
+            <div class="right_form-row">
+                <div class="right_form-column">
+                    <label for="user-password">Password</label>
+                    <input type="password" id="user-password" name="userPassword">
+                </div>
+
+                <div class="right_form-column">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirmPassword">
+                </div>
+            </div>
+            
+        </form>
+
+        <div class="right_account">
+            <button id="submit-buttom" type="submit" form="right_form">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+
     </div>
 
 
