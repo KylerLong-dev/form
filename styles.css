@@ -173,3 +173,78 @@ input [type="password"]:invalid {
 input [type="password"]:valid {
     border-color: green;
 }
+
+/* Small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column; /* Stack left and right sections vertically */
+    }
+
+    .left {
+        width: 100%; /* Full width for the left section */
+        height: auto; /* Let the height adjust naturally */
+    }
+    
+    .right {
+        width: 100%; /* Full width for the right section */
+        height: auto; /* Let the height adjust naturally */
+        flex-grow: 0; /* Prevent it from growing too much */
+    }
+
+    .left_logo h1 {
+        font-size: 4em; /* Adjust font size if necessary */
+    }
+
+    .left p {
+        font-size: 0.6em; /* Smaller text size */
+    }
+
+    .right_intro,
+    #right_form {
+        padding: 20px; /* Adjust padding */
+    }
+
+    input {
+        width: 100%; /* Full width inputs */
+        max-width: 300px; /* Max width for inputs */
+    }
+
+    .right_form-row {
+        flex-direction: column; /* Stack form fields vertically */
+        gap: 20px; /* Smaller gap */
+    }
+}
+
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .left {
+        width: 70%; /* Adjust width */
+    }
+    
+    .left_logo h1 {
+        font-size: 5em; /* Adjust font size */
+    }
+
+    .right {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .right_intro {
+        padding: 25px; /* Adjust padding */
+    }
+
+    #right_form {
+        padding: 25px; /* Adjust padding */
+    }
+
+    input {
+        width: 100%; /* Full width inputs */
+        max-width: 250px; /* Max width for inputs */
+    }
+
+    .right_form-row {
+        flex-direction: column; /* Stack form fields vertically */
+        gap: 15px; /* Smaller gap */
+    }
+}
